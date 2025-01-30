@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.background{
+    background: url(./images/thousand-sunny.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    position: relative;
+    display: flex;
+    height: 94%;
+    width: 64%;
+    z-index: 0;
+    border-radius: 36px;
+
+}
+.container::before{
+    position: absolute;
+    content: "";
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 50%;
+    border-radius: 36px;
+    box-shadow: 0 2px 50px 5px white
+}
+
+.log{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    border-radius: 36px;
+    p{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 4%;
+        a{
+            color: white;
+        }
+    }
+}
+.log::before{
+    position: absolute;
+    content: "";
+    background-color: #3574AB;
+    width: 100%;
+    height: 100%;
+    opacity: 75%;
+    z-index: -1;
+    border-radius: 36px;
+
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    img{
+        width: 90%;
+    }
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    button{
+        width: 10rem;
+        height: 3rem;
+        font-size: 1.4rem;
+        color: white;
+        background-color: #0D5BA3;
+        border-radius: 12px;
+        border: 1px solid;
+    }
+}
+.access{
+    padding: 0 16px;
+}
+h2{
+    margin: 4px 0;
+}
+.name, .password{
+    margin-bottom: 16px;
+    width: 90%;
+    height: 30px;
+    border-radius: 8px;
+}
+h2{
+    color: white;
+}
